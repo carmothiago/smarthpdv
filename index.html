@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmarthPDV | Software de PDV para o seu negócio</title>
+<meta name="description" content="Sistema de ponto de venda com implantação, treinamento e suporte. Implantação parcelada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<style>
+:root{
+  --roxo:#24103F;
+  --laranja:#FF8A2B;
+  --laranja-escuro:#B4520A;
+  --lilas:#F5F1FB;
+  --texto-suave:#4A3A66;
+  --texto-claro:#D9CEEE;
+  --pad:clamp(20px,5vw,72px);
+  --pad-y:clamp(48px,7vw,96px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--roxo);background:#fff}
+a{text-decoration:none}
+a:focus-visible{outline:3px solid var(--laranja);outline-offset:3px}
+.wrap{max-width:1440px;margin:0 auto}
+
+/* Botões */
+.btn{display:inline-block;padding:16px 32px;border-radius:999px;font-weight:800;font-size:18px}
+.btn-laranja{background:var(--laranja);color:var(--roxo)}
+.btn-contorno{border:2px solid #fff;color:#fff;font-weight:600;padding:14px 30px}
+.btn-roxo{background:var(--roxo);color:#fff;padding:18px 36px}
+
+/* Topo + hero */
+.topo{background:var(--roxo);color:#fff;padding:0 var(--pad) var(--pad-y)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px 0}
+.logo{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:800;color:#fff}
+.logo .smarth{color:var(--laranja)}
+.menu{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-weight:600}
+.menu a{color:#fff}
+.menu .btn-nav{background:var(--laranja);color:var(--roxo);padding:12px 22px;border-radius:999px;font-weight:800}
+.hero{max-width:760px;padding-top:clamp(32px,6vw,80px)}
+.sobretitulo{color:var(--laranja);font-weight:800;letter-spacing:.08em;font-size:14px}
+.hero h1{margin:16px 0 20px;font-size:clamp(36px,5.5vw,64px);line-height:1.05;font-weight:800}
+.hero p{margin:0 0 32px;font-size:20px;line-height:1.5;color:var(--texto-claro)}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:16px}
+
+/* Seções */
+section{padding:var(--pad-y) var(--pad)}
+h2{margin:0 0 12px;font-size:clamp(28px,4vw,42px);font-weight:800}
+.intro{margin:0 0 40px;font-size:18px;color:var(--texto-suave);max-width:640px}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--lilas);border-radius:20px;padding:28px}
+.card h3{margin:0 0 8px;font-size:20px}
+.card p{margin:0;line-height:1.5;color:var(--texto-suave)}
+
+#como{background:var(--lilas)}
+#como h2{margin-bottom:40px}
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.passo .num{font-size:44px;font-weight:800;color:var(--laranja-escuro)}
+.passo h3{margin:4px 0 8px}
+.passo p{margin:0;line-height:1.5;color:var(--texto-suave)}
+
+#contabilidades{background:var(--roxo);color:#fff}
+#contabilidades .conteudo{max-width:760px}
+#contabilidades h2{margin:12px 0 16px}
+#contabilidades p{margin:0 0 24px;font-size:18px;line-height:1.5;color:var(--texto-claro)}
+
+#contato{text-align:center}
+#contato p{margin:0 0 28px;font-size:18px;color:var(--texto-suave)}
+#contato .rodape-contato{margin:24px 0 0}
+
+footer{background:var(--roxo);color:var(--texto-claro);padding:24px var(--pad);font-size:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .smarth{color:var(--laranja)}
+footer .pdv{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topo">
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="#" aria-label="SmarthPDV">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF8A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M9 10l2 2 4-4"/>
+        </svg>
+        <span><span class="smarth">Smarth</span>PDV</span>
+      </a>
+      <div class="menu">
+        <a href="#solucoes">Soluções</a>
+        <a href="#como">Como funciona</a>
+        <a href="#contabilidades">Para contabilidades</a>
+        <a class="btn-nav" href="#contato">Falar com a gente</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="sobretitulo">SOFTWARE DE PDV PARA O SEU NEGÓCIO</div>
+      <h1>Venda mais rápido e tenha o caixa sob controle.</h1>
+      <p>Sistema de ponto de venda com implantação, treinamento e suporte, para lojas e comércios de qualquer segmento. Implantação parcelada, sem travar o seu começo.</p>
+      <div class="acoes">
+        <a class="btn btn-laranja" href="#contato">Quero uma proposta</a>
+        <a class="btn btn-contorno" href="#solucoes">Ver soluções</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="solucoes">
+      <h2>Tudo o que a sua operação precisa</h2>
+      <p class="intro">Escolha os módulos certos para o tamanho do seu negócio e cresça sem trocar de sistema.</p>
+      <div class="grade">
+        <div class="card"><h3>ERP Desktop</h3><p>Para o balcão e o caixa, com licenças por computador conforme a sua estrutura.</p></div>
+        <div class="card"><h3>ERP Web</h3><p>Acesse a gestão do negócio de onde estiver, pelo navegador.</p></div>
+        <div class="card"><h3>Dashboard</h3><p>Acompanhe os números da loja em um painel simples e direto.</p></div>
+        <div class="card"><h3>Força de Vendas</h3><p>Leve a venda até o cliente com o time externo conectado ao sistema.</p></div>
+        <div class="card"><h3>Balcão</h3><p>Atendimento ágil no balcão para pequenos comércios.</p></div>
+      </div>
+    </section>
+
+    <section id="como">
+      <h2>Como funciona</h2>
+      <div class="passos">
+        <div class="passo"><div class="num">1</div><h3>Conversa</h3><p>Entendemos o seu segmento e quantos computadores você tem.</p></div>
+        <div class="passo"><div class="num">2</div><h3>Proposta</h3><p>Você recebe o valor da mensalidade e da implantação, com tudo claro.</p></div>
+        <div class="passo"><div class="num">3</div><h3>Implantação</h3><p>Instalamos o sistema nos terminais e no servidor.</p></div>
+        <div class="passo"><div class="num">4</div><h3>Suporte</h3><p>Acompanhamos você depois da implantação, no dia a dia.</p></div>
+      </div>
+    </section>
+
+    <section id="contabilidades">
+      <div class="conteudo">
+        <div class="sobretitulo">PARCERIA</div>
+        <h2>Contabilidade parceira ganha todo mês</h2>
+        <p>Indique clientes para a SmarthPDV e receba comissão recorrente pelos clientes indicados. O seu cliente ainda conta com condições especiais. Fale com a gente e conheça o modelo de parceria.</p>
+        <a class="btn btn-laranja" href="#contato">Quero ser parceiro</a>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Vamos montar a proposta do seu negócio?</h2>
+      <p>Fale com a gente e receba uma proposta sob medida.</p>
+      <!-- Troque 5500000000000 pelo seu número (DDI + DDD + número, só dígitos) -->
+      <a class="btn btn-roxo" href="https://wa.me/5512981026740" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <p class="rodape-contato">smarthpdv@gmail.com · Pindamonhangaba -SP</p>
+    </section>
+  </main>
+
+  <footer>
+    <span><strong class="smarth">Smarth</strong><strong class="pdv">PDV</strong></span>
+    <span>© 2026 SmarthPDV. Todos os direitos reservados.</span>
+  </footer>
+
+</div>
+</body>
+</html>
